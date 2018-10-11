@@ -1,4 +1,4 @@
-# coding: utf-8
+﻿# coding: utf-8
 
 '''
 演習課題「おみくじを作ろう」
@@ -21,7 +21,7 @@
 # おみくじプログラム
 
 import random
-line = input().rstrip()
+line = input().rstrip().split(",")
 
 # 今回は自力で全部書いてみよう！
 
@@ -29,3 +29,9 @@ line = input().rstrip()
 # リストの要素数を変数に代入
 # リストの中身を出力
 # ランダムに選んだリストの要素を出力
+
+for a in line:
+    print(a)
+    b = len(line)
+    c = random.randrange(b)
+    print("'" + line[c] + "'")
